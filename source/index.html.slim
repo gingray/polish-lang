@@ -1,7 +1,6 @@
 ---
 title: Welcome to Polish Grammar
 ---
-.container
   h1.welcome Welcome to Polish Grammar
 
   h2 Language part names
@@ -25,12 +24,20 @@ title: Welcome to Polish Grammar
         td Adjective
         td Czarna
       tr
+        td Bezokolicznik
+        td Infinitive
+        td Być
+      tr
         td Mianownik
-        td Nominative Case
+        td Nominative Case(noun + adjective)
+        td
+      tr
+        td Narzędnik
+        td Instrumental case(noun + adjective)
         td
       tr
         td Biernik
-        td Accusative Case
+        td Accusative Case(noun + adjective)
         td
 
   table.table.table-striped
@@ -52,39 +59,10 @@ title: Welcome to Polish Grammar
         td Rodzaj nijaki
         td It
         td
-  h2 The Verb
 
-  table.table.table-striped
-    thead.thead-dark
-      tr
-        th = I18n.t(:pronouns)
-        th = I18n.t(:ending)
-        th = I18n.t(:example)
-    tbody
-      tr
-        td Ja
-        td -m
-        td Mam
-      tr
-        td Ty
-        td -ś
-        td Masz
-      tr
-        td
-          | On/Ona/Ono
-          br
-          |Pan/Pani
-        td -ø
-        td Ma
-      tr
-        td My
-        td -my
-        td Mamy
-      tr
-        td Wy
-        td -cie
-        td Macie
-      tr
-        td One/One
-        td -ą
-        td Mają
+  h2
+    = link_to 'The Verb', '/verb.html'
+  h2
+    = link_to 'The Noun', '/noun.html'
+  h2
+    = link_to 'The Adjective', '/adjective.html'

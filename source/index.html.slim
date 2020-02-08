@@ -1,0 +1,90 @@
+---
+title: Welcome to Polish Grammar
+---
+.container
+  h1.welcome Welcome to Polish Grammar
+
+  h2 Language part names
+  table.table.table-striped
+    thead.thead-dark
+      tr
+        th = I18n.t(:lang_part)
+        th = I18n.t(:equivalent)
+        th = I18n.t(:example)
+    tbody
+      tr
+        td Czasownik
+        td Verb
+        td Byc
+      tr
+        td Rzeczownik
+        td Noun
+        td Okno
+      tr
+        td Przymiotnik
+        td Adjective
+        td Czarna
+      tr
+        td Mianownik
+        td Nominative Case
+        td
+      tr
+        td Biernik
+        td Accusative Case
+        td
+
+  table.table.table-striped
+    thead.thead-dark
+      tr
+        th = I18n.t(:lang_part)
+        th = I18n.t(:equivalent)
+        th = I18n.t(:example)
+    tbody
+      tr
+        td Rodzaj męski
+        td He
+        td
+      tr
+        td Rodzaj żeński
+        td She
+        td
+      tr
+        td Rodzaj nijaki
+        td It
+        td
+  h2 The Verb
+
+  table.table.table-striped
+    thead.thead-dark
+      tr
+        th = I18n.t(:pronouns)
+        th = I18n.t(:ending)
+        th = I18n.t(:example)
+    tbody
+      tr
+        td Ja
+        td -m
+        td Mam
+      tr
+        td Ty
+        td -ś
+        td Masz
+      tr
+        td
+          | On/Ona/Ono
+          br
+          |Pan/Pani
+        td -ø
+        td Ma
+      tr
+        td My
+        td -my
+        td Mamy
+      tr
+        td Wy
+        td -cie
+        td Macie
+      tr
+        td One/One
+        td -ą
+        td Mają

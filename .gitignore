@@ -19,3 +19,6 @@
 .idea
 provision
 build.sh
+node_modules
+.tmp
+source/javascripts/bundle.js

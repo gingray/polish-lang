@@ -8,6 +8,13 @@ require 'slim'
 #
 # With no layout
 activate :i18n, mount_at_root: :pl
+activate :external_pipeline,
+         name: :webpack,
+         command: build? ? './node_modules/webpack/bin/webpack.js --bail' : './node_modules/webpack/bin/webpack.js --watch -d',
+         source: './tmp/dist',
+         latency: 1
+
+
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false

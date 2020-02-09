@@ -16,9 +16,12 @@ html
     == stylesheet_link_tag :site
     == javascript_include_tag  "all"
 
+
   body class="#{page_classes}"
     nav.navbar.navbar-light.bg-light
       span.navbar-brand.mb-0.h1
         = link_to 'Back to Index', '/index.html'
     .container
       == yield
+
+  == javascript_include_tag "bundle"

@@ -17,9 +17,6 @@ function root(args) {
 
 module.exports = {
   entry: {
-    // vendor: './src/vendor.ts',
-    // polyfills: './src/polyfills.ts',
-    // main: isDev ? './src/main.ts' : './src/main.aot.ts',
     main: './assets/main.ts'
   },
   output: {
@@ -59,13 +56,8 @@ module.exports = {
         test: /\.ts$/,
         loaders: [
           {
-            loader: 'awesome-typescript-loader',
-            options: {
-              configFileName: root('tsconfig.json')
-            }
+            loader: 'babel-loader',
           },
-          'angular2-template-loader',
-          'angular-router-loader'
         ],
         exclude: [/node_modules/]
       }

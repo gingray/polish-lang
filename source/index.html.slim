@@ -67,20 +67,4 @@ title: Welcome to Polish Grammar
   h2
     = link_to 'The Adjective', '/adjective.html'
 
-  #app-add-new-words
-    .new-word-container
-      form
-        .form-group
-          label for="new-word-original" Word
-          input.form-control#new-word-original data-bind="textInput: original" type="text" name="original"
-        .form-group
-          label for="new-word-tags" Tags
-          input.form-control#new-word-tags data-bind="dataTags: langParts"
-        .form-group
-          label for="new-word-translation" Translation
-          input.form-control#new-word-translation data-bind="textInput: translation" type="text" name="translation"
-        .form-group
-          label for="new-word-translation-lang" Language
-          input.form-control#new-word-translation-lang data-bind="textInput: lang" type="text" name="lang"
-        button.btn.btn-primary.btn-block data-bind="click: addWord" Add
 

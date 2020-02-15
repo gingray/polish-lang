@@ -1,0 +1,8 @@
+#app-show-words
+  script type="text/html" id="words-template"
+    h3 data-bind="text: name"
+    p
+      | Translation: &nbsp;
+      span data-bind="text: translations[0].name"
+
+  div data-bind="template: { name: 'words-template', foreach: words }"

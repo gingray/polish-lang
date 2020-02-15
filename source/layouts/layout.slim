@@ -18,9 +18,14 @@ html
 
 
   body class="#{page_classes}"
-    nav.navbar.navbar-light.bg-light
-      span.navbar-brand.mb-0.h1
-        = link_to 'Back to Index', '/index.html'
-    .container
-      == yield
+    #wrapper.d-flex
+      #sidebar-wrapper.bg-light.border-right
+        .sidebar-heading Learn Polish
+        .list-group.list-group-flush
+          a.list-group-item.list-group-item-action.bg-light href="/index.html" Main
+          a.list-group-item.list-group-item-action.bg-light href="/grammar.html" Grammar rules
+          a.list-group-item.list-group-item-action.bg-light href="/add_word.html"  Add Word
+          a.list-group-item.list-group-item-action.bg-light href="/word_quiz.html"  Word Quiz
+      .container-fluid
+        == yield
 
